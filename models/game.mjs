@@ -12,9 +12,15 @@ export default function initGameModel(sequelize, DataTypes) {
         allowNull: false,
         type: DataTypes.JSON,
       },
+      active: {
+        allowNull: false,
+        type: DataTypes.BOOLEAN,
+        defaultValue: true,
+      },
       createdAt: {
         allowNull: false,
         type: DataTypes.DATE,
+        defaultValue: DataTypes.NOW,
       },
       updatedAt: {
         allowNull: false,

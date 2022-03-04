@@ -10,6 +10,10 @@ module.exports = {
       game_state: {
         type: Sequelize.JSON,
       },
+      active: {
+        allowNull: false,
+        type: Sequelize.BOOLEAN,
+      },
       created_at: {
         allowNull: false,
         type: Sequelize.DATE,
